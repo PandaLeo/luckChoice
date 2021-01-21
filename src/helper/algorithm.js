@@ -38,7 +38,7 @@ export function luckydrawHandler(total, won, num, faker) {
   console.log(won, generateArray(1, Number(total)))
   const peolist = generateArray(1, Number(total));
   const res = [];
-  const fakerman = 9
+  const fakerman = 29
   let wons = won;
   if (faker) {
     for (let j = 0; j < num; j++) {

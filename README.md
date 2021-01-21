@@ -1,6 +1,6 @@
 ## 2020年上海铁能建设工程有限公司年会抽奖
 
-[演示地址](https://vitozyf.github.io/lucky-draw/index.html#/?tdsourcetag=s_pctim_aiomsg)
+[演示地址](https://PandaLeo.github.io/luckChoice/index.html#/?tdsourcetag=s_pctim_aiomsg)
 
 ## 使用说明
 
@@ -44,17 +44,6 @@
 - 本抽奖程序无暗箱操作，无后台，无后门。
 - 名单和照片显示只需导入一种即可,无导入数据则使用抽奖号码。
 - 建议使用最新的 Chrome 浏览器打开体验最佳。
-- 由于背景音乐加载较慢，可以在抽奖前提前打开缓存好。或者安装 windows 版本软件到本地，无需联网即可使用。
-
-## windows 软件版本
-
-- 本抽奖程序的 windows 软件版本下载[安装包](https://github.com/vitozyf/lucky-draw/releases)
-
-## Donation
-
-如果这个开源项目对您有帮助，请作者喝杯咖啡吧。
-
-![payimg](./public/pay.png)
 
 ## License
 

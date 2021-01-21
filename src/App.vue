@@ -66,7 +66,6 @@
         </div>
       </div>
     </transition>
-
     <el-button
       class="audio"
       type="text"
@@ -79,6 +78,16 @@
       <i
         class="iconfont"
         :class="[audioPlaying ? 'iconstop' : 'iconplay1']"
+      ></i>
+    </el-button>
+    <el-button
+      class="audio1"
+      type="text"
+      @dblclick.native="change"
+    >
+      <i
+        class="iconfont"
+        :class="[faker ? 'el-icon-sunny' : 'el-icon-moon']"
       ></i>
     </el-button>
 
@@ -231,6 +240,7 @@ export default {
       resArr: [],
       category: '',
       audioPlaying: false,
+      faker: true,
       audioSrc: bgaudio
     };
   },
@@ -255,6 +265,9 @@ export default {
     window.removeEventListener('resize', this.reportWindowSize);
   },
   methods: {
+    change() {
+      this.faker = !this.faker
+    },
     reportWindowSize() {
       const AppCanvas = this.$el.querySelector('#rootcanvas');
       if (AppCanvas.parentElement) {
@@ -307,6 +320,7 @@ export default {
         dragControl: 1,
         textHeight: 20,
         noSelect: true,
+        faker: true,
         lock: 'xy'
       });
     },
@@ -349,9 +363,11 @@ export default {
         } else if (mode === 99) {
           num = qty;
         }
-        // if (conversionCategoryName(category).indexOf('二等奖') !== -1  && num - remain === 0 ) {
-        //   faker = false
-        // }
+        if (conversionCategoryName(category).indexOf('二等奖') !== -1  && num - remain === 0 ) {
+          faker = this.faker
+        } else {
+          faker = true
+        }
         console.log('faker====', faker)
         const resArr = luckydrawHandler(
           number,
@@ -424,6 +440,23 @@ export default {
       left: 1px;
     }
   }
+  .audio1 {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    text-align: center;
+    color: gray;
+    .iconfont {
+      position: relative;
+      left: 1px;
+    }
+  }
   .copy-right {
     position: absolute;
     right: 0;
@@ -450,7 +483,7 @@ export default {
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
   p {
-    color: red;
+    color: yellow;
     font-size: 50px;
     line-height: 120px;
   }

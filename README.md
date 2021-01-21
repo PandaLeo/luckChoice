@@ -1,6 +1,6 @@
 ## 2020年上海铁能建设工程有限公司年会抽奖
 
-[演示地址](https://pandaleo.github.io/luckChoice/dist/index.html#/?tdsourcetag=s_pctim_aiomsmain)
+[演示地址](https://pandaleo.github.io/luckChoice/dist/index.html#/?tdsourcetag=s_pctim_aiomsmaia)
 
 ## 使用说明
 

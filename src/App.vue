@@ -175,7 +175,7 @@ export default {
       const { number } = this.config;
       const nums = number >= 1500 ? 500 : this.config.number;
       const configNum = number > 1500 ? Math.floor(number / 3) : number;
-      const randomShowNums = luckydrawHandler(configNum, [], nums, false);
+      const randomShowNums = luckydrawHandler(configNum, [], nums, true);
       const randomShowDatas = randomShowNums.map(item => {
         const listData = this.list.find(d => d.key === item);
         const photo = this.photos.find(d => d.id === item);

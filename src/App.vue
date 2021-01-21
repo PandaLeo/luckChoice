@@ -349,9 +349,9 @@ export default {
         } else if (mode === 99) {
           num = qty;
         }
-        // if (conversionCategoryName(category).indexOf('二等奖') !== -1  && num - remain === 0 ) {
-        //   faker = false
-        // }
+        if (conversionCategoryName(category).indexOf('二等奖') !== -1  && num - remain === 0 ) {
+          faker = false
+        }
         console.log('faker====', faker)
         const resArr = luckydrawHandler(
           number,
